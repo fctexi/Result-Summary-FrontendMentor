@@ -36,4 +36,4 @@ I also learned how to create various types of CSS such as reset.css, style.css, 
 
 ### Links
 
-- Solution URL: [Results summary component solution]()
+- Solution URL: [Results summary component solution](https://fctexi.github.io/Result-Summary-FrontendMentor/)
