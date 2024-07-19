@@ -1,0 +1,221 @@
+html {
+    font-size: 62.5%;
+    /* 1.6rem = 16px */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Haken Grotesk', sans-serif;
+    min-height: 100vh;
+    background-color: var(--white);
+}
+
+.summary {
+    display: grid;
+    grid-template-areas: "result summary-board";
+    box-shadow: rgba(0, 0, 0, 0.374) 10px 10px 30px;
+    border-radius: 20px;
+    background-color: var(--white);
+}
+
+/* ----RESULT---- */
+
+.result {
+    grid-area: result;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    padding: 10px;
+    border-radius: 20px;
+    background-image: linear-gradient(
+       to bottom, var(--slate-blue), var(--royal-blue)
+    );
+    color: var(--pale-blue);
+}
+
+.result h1 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding-block: 25px;
+    color: var(--lavander);
+}
+
+.result .circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 150px;
+    background-image: linear-gradient(
+        to bottom, var(--violet-blue), var(--persian-blue)
+    );
+    border-radius: 50%;
+}
+
+.result .circle h2 {
+    font-size: 5rem;
+    color: var(--white);
+}
+
+.result .circle p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.result h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+.result .score {
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding-bottom: 30px;
+    text-align: center;
+    width: 200px;
+    color: var(--lavander);
+}
+
+/* ----SUMMARY---- */
+
+.summary-board {
+    grid-area: summary-board;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: var(--white);
+}
+
+.summary-board h1 {
+    padding-block: 25px;
+    padding-left: 15px;
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--gray-blue);
+}
+
+.summary-board ul {
+    width: 100%;
+}
+
+.summary-board ul li {
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    height: 45px;
+    border-radius: 10px;
+    color: var(--lavander);
+}
+
+.summary-board ul li .bold {
+    margin-right: 5px;
+    color: var(--gray-blue);
+}
+
+.summary-board ul li:nth-child(1) {
+    background-color: hsl(0, 100%, 67%, 0.1);
+}
+
+.summary-board ul li:nth-child(2) {
+    background-color: hsl(39, 100%, 56%, 0.1);
+}
+
+.summary-board ul li:nth-child(3) {
+    background-color: hsl(166, 100%, 37%, 0.1);
+}
+
+.summary-board ul li:nth-child(4) {
+    background-color:  hsl(234, 85%, 45%, 0.1);
+}
+
+.summary-board ul li:last-child {
+    margin-bottom: 20px;
+}
+
+.summary-board ul li .red {
+    color: var(--red);
+    margin-right: 60px;
+}
+
+.summary-board ul li .red::before {
+    content: "";
+    background: url(../images/icon-reaction.svg) center center no-repeat;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.summary-board ul li .yellow {
+    color: var(--yellow);
+    margin-right: 65px;
+}
+
+.summary-board ul li .yellow::before {
+    content: "";
+    background: url(../images/icon-memory.svg) center center no-repeat;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.summary-board ul li .teal {
+    color: var(--teal);
+    margin-right: 75px;
+}
+
+.summary-board ul li .teal::before {
+    content: "";
+    background: url(../images/icon-verbal.svg) center center no-repeat;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.summary-board ul li .blue {
+    color: var(--blue);
+    margin-right: 75px;
+}
+
+.summary-board ul li .blue::before {
+    content: "";
+    background: url(../images/icon-visual.svg) center center no-repeat;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.summary-board button {
+    font-size: 1.6rem;
+    font-weight: 600;
+    height: 40px;
+    width: 90%;
+    border-radius: 20px;
+    border: none;
+    color: var(--white);
+    background-color: var(--gray-blue);
+    transition: 0.5s ease-in-out;
+}
+
+.summary-board button:hover {
+    background-image: linear-gradient(
+       to bottom, var(--slate-blue), var(--royal-blue)
+    );
+}
+
+/* ----ATTRIBUTION---- */
+
+.attribution {
+    padding-block: 30px;
+}
